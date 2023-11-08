@@ -28,7 +28,7 @@ class CountryStateCityProvider extends ServiceProvider
                     $filesystem->copy(__DIR__ .'/../stubs/Models/' . $modelName . '.stub', app_path('Models/' . $modelName . '.php'));
                 }
 
-                $filesystem->copy(__DIR__ .'/../stubs/seeders/CountryStateCitySeeder.stub', database_path('seeders/CountryStateCitySeeder.php'));
+                $filesystem->copy(__DIR__ .'/../stubs/seeders/CountryStateCitySeeder.stub', database_path('seeds/CountryStateCitySeeder.php'));
 
                 $filesystem->copy(__DIR__ .'/../stubs/migrations/2023_11_08_000000_create_country_state_city_table.stub', database_path('migrations/2023_11_08_000000_create_country_state_city_table.php'));
 

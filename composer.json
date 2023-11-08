@@ -1,0 +1,50 @@
+{
+    "name": "ab-muazzam/country-state-city",
+    "description": "Package for using countries, states and cities in laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AbMuazzam\\CountryStateCity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ab Muazzam",
+            "email": "muazzammanzoor8@gmail.com",
+            "role": "Developer",
+            "homepage": "https://abdulmuazzam.in/"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/console": "^10.31",
+        "illuminate/filesystem": "^10.31",
+        "illuminate/support": "^10.31"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AbMuazzam\\CountryStateCity\\CountryStateCityProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postInstall",
+      "composer dump-autoload",
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+      "composer dump-autoload"
+    ]
+  }
+}

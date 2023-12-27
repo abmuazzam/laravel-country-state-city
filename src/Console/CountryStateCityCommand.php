@@ -3,7 +3,7 @@
 namespace AbMuazzam\CountryStateCity\Console;
 
 use Illuminate\Console\Command;
-use AbMuazzam\CountryStateCity\Database\Seeders\CountryStateCitySeeder;
+use Database\Seeders\CountryStateCitySeeder;
 
 /**
  * Class CountryStateCityCommand

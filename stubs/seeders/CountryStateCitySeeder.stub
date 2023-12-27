@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace AbMuazzam\CountryStateCity\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Country;
